@@ -11,7 +11,8 @@ sealed interface BookshelfUiState {
     object Error : BookshelfUiState
 }
 
-class BookshelfViewModel : ViewModel() {
+class BookshelfViewModel(private val bookshelfRepository: BookshelfRepository) :
+    ViewModel() {
     var uiState: BookshelfUiState by mutableStateOf(BookshelfUiState.Loading)
         private set
 
