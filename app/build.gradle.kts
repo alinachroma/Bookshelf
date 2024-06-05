@@ -54,6 +54,7 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
@@ -64,6 +65,7 @@ dependencies {
     implementation(libs.coil)
     implementation(libs.kotlinx.serialization)
     implementation(libs.kotlinx.serialization.converter)
+    implementation(libs.gson.converter)
     implementation(libs.okhttp)
 
     testImplementation(libs.junit)
