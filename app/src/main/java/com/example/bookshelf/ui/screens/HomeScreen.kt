@@ -26,3 +26,16 @@ fun HomeScreen(
     }
 }
 
+@ThemePreviews
+@Composable
+fun HomeScreenPreviews() {
+    BookshelfTheme {
+        HomeScreen(
+            uiState = BookshelfUiState.Success(
+                result = BooksList(
+                    items = fakeDataSourceForPreviews
+                )
+            )
+        )
+    }
+}
