@@ -17,6 +17,7 @@ import coil.request.ImageRequest
 import com.example.bookshelf.R
 import com.example.bookshelf.model.BooksList
 import com.example.bookshelf.model.Item
+import com.example.bookshelf.ui.items.BookCard
 
 @Composable
 fun ResultScreen(
@@ -36,26 +37,4 @@ fun ResultScreen(
     )
 }
 
-@Composable
-fun BookCard(
-    book: Item,
-    modifier: Modifier = Modifier
-) {
-    Card(modifier = modifier.padding(dimensionResource(id = R.dimen.padding_small))) {
-        AsyncImage(
-            model = ImageRequest.Builder(context = LocalContext.current)
-                .data(
-                    book.volumeInfo.imageLinks.thumbnail
-                        .replace("http", "https")
-                )
-                .crossfade(true)
-                .build(),
-            contentDescription = null,
-            placeholder = painterResource(id = R.drawable.loading_img),
-            error = painterResource(id = R.drawable.ic_connection_error),
-            contentScale = ContentScale.Crop,
-            modifier = Modifier.fillMaxWidth()
-        )
-    }
-}
 
