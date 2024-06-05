@@ -19,7 +19,10 @@ fun BookshelfApp(
             val viewModel: BookshelfViewModel = viewModel(
                 factory = BookshelfViewModel.Factory
             )
-            HomeScreen(uiState = viewModel.uiState)
+            HomeScreen(
+                uiState = viewModel.uiState,
+                retryAction = viewModel::getBooksData
+            )
         }
     }
 }

@@ -12,7 +12,8 @@ import com.example.bookshelf.utils.fakeDataSourceForPreviews
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
-    uiState: BookshelfUiState
+    uiState: BookshelfUiState,
+    retryAction: () -> Unit
 ) {
     when (uiState) {
         is BookshelfUiState.Success ->
@@ -22,7 +23,7 @@ fun HomeScreen(
             )
 
         is BookshelfUiState.Loading -> LoadingScreen()
-        is BookshelfUiState.Error -> ErrorScreen()
+        is BookshelfUiState.Error -> ErrorScreen(retryAction = retryAction)
     }
 }
 
@@ -35,7 +36,8 @@ fun HomeScreenPreviews() {
                 result = BooksList(
                     items = fakeDataSourceForPreviews
                 )
-            )
+            ),
+            retryAction = {}
         )
     }
 }
