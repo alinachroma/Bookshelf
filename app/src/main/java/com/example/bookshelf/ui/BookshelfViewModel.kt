@@ -40,5 +40,14 @@ class BookshelfViewModel(private val bookshelfRepository: BookshelfRepository) :
             }
         }
     }
+
+    companion object {
+        val Factory: ViewModelProvider.Factory = viewModelFactory {
+            initializer {
+                val application = (this[APPLICATION_KEY] as BookshelfApplication)
+                val bookshelfRepository = application.container.repository
+                BookshelfViewModel(bookshelfRepository = bookshelfRepository)
+            }
+        }
     }
 }
