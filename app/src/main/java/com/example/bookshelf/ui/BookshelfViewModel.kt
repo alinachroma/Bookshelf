@@ -31,6 +31,14 @@ class BookshelfViewModel(private val bookshelfRepository: BookshelfRepository) :
     }
 
     fun getBooksData() {
-        TODO()
+        viewModelScope.launch {
+            uiState = try {
+                val result = bookshelfRepository.getBooksData()
+                BookshelfUiState.Success(result)
+            } catch (e: IOException) {
+                BookshelfUiState.Error
+            }
+        }
+    }
     }
 }
