@@ -6,7 +6,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 
 sealed interface BookshelfUiState {
-    data class Success(val result: String) : BookshelfUiState
+    data class Success(val result: BooksList) : BookshelfUiState
     object Loading : BookshelfUiState
     object Error : BookshelfUiState
 }
