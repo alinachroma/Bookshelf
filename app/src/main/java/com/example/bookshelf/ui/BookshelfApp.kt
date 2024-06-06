@@ -16,6 +16,7 @@ fun BookshelfApp(
 ) {
     Scaffold(modifier = modifier.fillMaxSize()) { paddingValues ->
         Box(modifier = Modifier.padding(paddingValues)) {
+        topBar = { BookshelfTopBar() },
             val viewModel: BookshelfViewModel = viewModel(
                 factory = BookshelfViewModel.Factory
             )
