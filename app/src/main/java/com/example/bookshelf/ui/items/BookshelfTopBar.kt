@@ -29,7 +29,7 @@ fun BookshelfTopBar(
             Text(
                 text = stringResource(id = R.string.app_name),
                 style = MaterialTheme.typography.headlineMedium,
-                color = MaterialTheme.colorScheme.surface,
+                color = Color.White,
                 fontWeight = FontWeight.Bold
             )
         },
