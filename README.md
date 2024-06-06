@@ -3,7 +3,7 @@
 <p id="description">An Android app that makes multiple requests to a web service and displays a list of books with images from the Google Books API. Built fully with Jetpack Compose within the "Android Basics with Compose" Course (Unit 5 - Connect to the internet - Load and display images from the internet).</p>
 
 <h2>Project Screenshots:</h2>
-<img width="600" alt="bookshelf_demo" src="https://github.com/alinachroma/Bookshelf/assets/40247900/0c96f5aa-2d31-477b-a18a-6fec3519d2ce">
+<img width="600" alt="bookshelf2" src="https://github.com/alinachroma/Bookshelf/assets/40247900/c514930b-4ff9-41ca-85b8-302f26f1637d">
 
 ## 🚀 Demo
 | Offline-online behavior  |  
