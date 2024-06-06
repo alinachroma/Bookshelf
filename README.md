@@ -31,3 +31,6 @@ Technologies used in the project:
 *   Gson
 *   Coil
 *   Manual Dependency Injection
+
+<h2>Credits</h2>
+<a href="https://www.flaticon.com/free-icons/library" title="library icons">Library icons created by Good Ware - Flaticon</a>
