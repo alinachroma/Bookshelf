@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Bookshelf</h1>
 
-<p id="description">An Android app that makes multiple requests to a web service and displays a list of books with images from the Google Books API. Built fully with Jetpack Compose within the "Android Basics with Compose" Course (Unit 5 - Connect to the internet - Load and display images from the internet).</p>
+An Android app that makes multiple requests to a web service and displays a list of books with images from the Google Books API. Created for demo purposes to demonstrate everything I learned within the "Android Basics with Compose" Course (Unit 5). Built fully with Jetpack Compose.
 
 <h2>Project Screenshots:</h2>
 <img width="600" alt="bookshelf2" src="https://github.com/alinachroma/Bookshelf/assets/40247900/c514930b-4ff9-41ca-85b8-302f26f1637d">
